@@ -6,62 +6,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Resources/CSS/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;700&display=swap" rel="stylesheet">  
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet"> 
     <title>Richard Convery JJO</title>
 
 </head>
 <body>
     <!-- create the hero header and text within it -->
 <div class='hero'></div>
-<img src="Resources/images/hero-image.png" alt="Welcome to JJO">
-<h1 class="white">JJO</h1>
-<nav class="top-nav">
-    <ul>
-        <li>Discounts</li>
-        <li>About Us</li>
-        <li>FAQ</li>
-        <li>Blog</li>
-        <li class="btn">Login</li>
-    </ul>
-</nav>
-    <h1 class="white">Juniors make IT work.</h1>
-    <h2>Hire and invest in highly skilled juniors now.</h2>
-<button class="btn">Post Offer Now</button>
+<img id="hero-image" src="Resources/images/hero-image.png" alt="Welcome to JJO">
+<div class="hero-container">
+    <div class="hero-top">
+        <h1 class="white sans JJO">JJO</h1>
+        <nav class="top-nav">
+            <ul>
+                <li>Discounts</li>
+                <li>About Us</li>
+                <li>FAQ</li>
+                <li>Blog</li>
+                <li class="btn">Login</li>
+            </ul>
+        </nav>
+    </div>
+    <br>
+    <br>
+    <br>
+        <h1 class="white">Juniors make IT work.</h1>
+        <p class="white">Hire and invest in highly skilled juniors now.</p>
+    <button class="btn">Post Offer Now</button>
+</div>
 <!-- Job offers -->
-<div class="job-offers">
-    <h1>Newest Job Offers</h1>
-    <p class="link">View all job offers</p>
-    <!-- List of job offers -->
-    <div class="job-list">
-        <div class="job">
-            <h3>Junior Java Developer</h3>
-            <p class="time-since-post">2 hours ago</p>
-            <p><strong>PickSaas</strong> Wrclaw, Polask</p>
-            <br>
-            <br>
-            <p>I am currently looking for a Java Developer. Project for Public Sector Location: Wrocław (during the pandemic remote work)</p>
-            <br>
-            <p>$ up to PLN 550 net / MD B2B</p>
-            <button>></button>
-        </div>
-        <div class="job">
-            <h3>Junior Project Manger</h3>
-            <p class="time-since-post">3 hours ago</p>
-            <p><strong>Frontkom</strong> Lublin, Polska</p>
-            <br>
-            <br>
-            <p>Join us in the Lublin office to build innovative long-term projects. Exciting international clients and partners and a work environment focused on learning and growth awaits you!</p>
-            <button>></button>
-        </div>
-        <div class="job">
-            <h3>Junior Project Manager</h3>
-            <p class="time-since-post">1 day ago</p>
-            <p><strong>Frontkom</strong> Lublin, Polska</p>
-            <br>
-            <br>
-            <p>I am currently looking for a Java Developer. Project for Public Sector Location: Wrocław (during the pandemic remote work)</p>
-            <br>
-            <p>$ up to PLN 550 net / MD B2B</p>
-            <button>></button>
+<div class="job-offers-container">
+    <div class="job-offers">
+        <h1>Newest Job Offers</h1>
+        <p class="link">View all job offers</p>
+        <!-- List of job offers -->
+        <div class="job-list">
+            <div class="job">
+                <h3>Junior Java Developer</h3>
+                <p class="time-since-post">2 hours ago</p>
+                <p><strong>PickSaas</strong> Wrclaw, Polask</p>
+                <br>
+                <br>
+                <p>I am currently looking for a Java Developer. Project for Public Sector Location: Wrocław (during the pandemic remote work)</p>
+                <br>
+                <p>$ up to PLN 550 net / MD B2B</p>
+                <button>></button>
+            </div>
+            <div class="job">
+                <h3>Junior Project Manger</h3>
+                <p class="time-since-post">3 hours ago</p>
+                <p><strong>Frontkom</strong> Lublin, Polska</p>
+                <br>
+                <br>
+                <p>Join us in the Lublin office to build innovative long-term projects. Exciting international clients and partners and a work environment focused on learning and growth awaits you!</p>
+                <button>></button>
+            </div>
+            <div class="job">
+                <h3>Junior Project Manager</h3>
+                <p class="time-since-post">1 day ago</p>
+                <p><strong>Frontkom</strong> Lublin, Polska</p>
+                <br>
+                <br>
+                <p>I am currently looking for a Java Developer. Project for Public Sector Location: Wrocław (during the pandemic remote work)</p>
+                <br>
+                <p>$ up to PLN 550 net / MD B2B</p>
+                <button>></button>
+            </div>
         </div>
     </div>
 </div>
@@ -106,7 +120,7 @@
 </div>
 <!-- newsletter sign up -->
 <div class="newsletter">
-    <img src="Resources/images/Newsletter-image.png" alt="Sign up to get the latest jobs">
+    <img id="newsletter-image" src="Resources/images/Newsletter-image.png" alt="Sign up to get the latest jobs">
     <div class="sign-up">
         <h1 class="white">Receive new job offers.</h1>
         <p>Want to know as soon as a new job offer is posted on our website? Subscribe to our weekly job offer digest.</p>

@@ -1,0 +1,66 @@
+html, body {
+    margin:0;
+    padding:0;
+    }    
+h1, h2, h3, h4, p, nav, .btn  {
+    font-family: 'Manrope', sans-serif;
+}
+.sans {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 45px;
+}
+h1 {
+    font-weight: bold;
+    display: inline;
+}
+h2 {
+    display: block;
+}
+.JJO {
+    padding-bottom: 25px;
+}
+#hero-image {
+    width: 100%;
+}
+#newsletter-image {
+    width: 100%;
+}
+nav {
+    float: right;
+}
+li {
+    display: inline;
+    margin-left: 25px;
+}
+.btn {
+    background-color: #266EFD;
+    box-shadow: #3876F1 58%;
+    padding: 10px 25px;
+    border-radius: 8px;
+    border-style: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+.hero {
+    position: relative;
+    text-align: center;
+}
+.hero-container {
+    position: absolute;
+    top: 40px;
+    left: 130px;
+    width: 83%;
+}
+.job-offers{
+    position: absolute;
+    top: 40px;
+    left: 130px;
+    width: 83%;
+}
+.white {
+    color: white;
+}
+.top-nav {
+    color: white;
+}
