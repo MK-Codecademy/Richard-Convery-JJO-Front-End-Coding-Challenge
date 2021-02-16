@@ -16,7 +16,6 @@
 </head>
 <body>
     <!-- create the hero header and text within it -->
-<div class='hero'></div>
 <img id="hero-image" src="Resources/images/hero-image.png" alt="Welcome to JJO">
 <div class="hero-container">
     <div class="hero-top">
@@ -27,7 +26,7 @@
                 <li>About Us</li>
                 <li>FAQ</li>
                 <li>Blog</li>
-                <li class="btn">Login</li>
+                <li class="btn-rect">Login</li>
             </ul>
         </nav>
     </div>
@@ -36,7 +35,7 @@
     <br>
         <h1 class="white">Juniors make IT work.</h1>
         <p class="white">Hire and invest in highly skilled juniors now.</p>
-    <button class="btn">Post Offer Now</button>
+    <button class="btn-rect">Post Offer Now</button>
 </div>
 <!-- Job offers -->
 <div class="job-offers-container">
@@ -59,13 +58,13 @@
                 <p><strong>PickSaas</strong> Wrclaw, Polask</p>
                 <p>I am currently looking for a Java Developer. Project for Public Sector Location: Wrocław (during the pandemic remote work) <br>
                 $ up to PLN 550 net / MD B2B</p>
-                <button>></button>
+                <button class="btn-sq">></button>
             </div>
             <div class="job-border1"></div>
             <div class="job-border2"></div>
             <div class="job">
                 <div class="job-top">
-                    <h3>Junior Project Manger</h3>
+                    <h3>Junior Project Manager</h3>
                     <div class="time-since-post-container">
                         <p class="time-since-post">3 hours ago</p>
                     </div>
@@ -73,7 +72,7 @@
                 <p><strong>Frontkom</strong> Lublin, Polska</p>
 
                 <p>Join us in the Lublin office to build innovative long-term projects. Exciting international clients and partners and a work environment focused on learning and growth awaits you!</p>
-                <button>></button>
+                <button class="btn-sq">></button>
             </div>
             <div class="job-border1"></div>
             <div class="job-border2"></div>
@@ -86,7 +85,7 @@
                 </div>
                 <p><strong>Frontkom</strong> Lublin, Polska</p>
                 <p>I am currently looking for a Java Developer. Project for Public Sector Location: Wrocław (during the pandemic remote work) <br> $ up to PLN 550 net / MD B2B</p>
-                <button>></button>
+                <button class="btn-sq">></button>
             </div>
         </div>
     </div>
@@ -94,54 +93,63 @@
 <!-- featured companies -->
 <div class="featured-container">
     <div class="featured">
-        <h1>Featured Companies</h1>
+        <h1 class="featured-heading">Featured Companies</h1>
         <div class="companies">
             <div class="company">
-                <img src="Resources/images/icon-briefcase.png" alt="Company Logo">
+                <img class="logo"  src="Resources/images/icon-briefcase.png" alt="Company Logo">
                 <h4>GrandParade</h4>
             </div>
             <div class="company">
-                <img src="Resources/images/icon-briefcase.png" alt="Company Logo">
+                <div class="center">
+                    <img class="logo" src="Resources/images/icon-briefcase.png" alt="Company Logo">
+                </div>  
                 <h4>Seargin</h4>
             </div><div class="company">
-                <img src="Resources/images/icon-briefcase.png" alt="Company Logo">
-                <h4>DEC Ventures</h4>
+                <img class="logo"  src="Resources/images/icon-briefcase.png" alt="Company Logo">
+                <h4>DEX Ventures</h4>
             </div><div class="company">
-                <img src="Resources/images/icon-briefcase.png" alt="Company Logo">
+                <img class="logo"  src="Resources/images/icon-briefcase.png" alt="Company Logo">
                 <h4>NBC</h4>
             </div><div class="company">
-                <img src="Resources/images/icon-briefcase.png" alt="Company Logo">
+                <img class="logo"  src="Resources/images/icon-briefcase.png" alt="Company Logo">
                 <h4>SVT SP Zoo</h4>
             </div><div class="company">
-                <img src="Resources/images/icon-briefcase.png" alt="Company Logo">
+                <img class="logo"  src="Resources/images/icon-briefcase.png" alt="Company Logo">
                 <h4>DG Tech</h4>
             </div><div class="company">
-                <img src="Resources/images/icon-briefcase.png" alt="Company Logo">
+                <img class="logo"  src="Resources/images/icon-briefcase.png" alt="Company Logo">
                 <h4>PickSaaS</h4>
             </div><div class="company">
-                <img src="Resources/images/icon-briefcase.png" alt="Company Logo">
+                <img class="logo"  src="Resources/images/icon-briefcase.png" alt="Company Logo">
                 <h4>BlackRose</h4>
             </div><div class="company">
-                <img src="Resources/images/icon-briefcase.png" alt="Company Logo">
+                <img class="logo"  src="Resources/images/icon-briefcase.png" alt="Company Logo">
                 <h4>FrontKom</h4>
             </div><div class="company">
-                <img src="Resources/images/icon-briefcase.png" alt="Company Logo">
+                <img class="logo"  src="Resources/images/icon-briefcase.png" alt="Company Logo">
                 <h4>FrontKom</h4>
             </div>
-            <button btn-round>></button>
         </div>
+        <button id="btn-round">></button>
     </div>
 </div>
 <!-- newsletter sign up -->
+
 <div class="newsletter">
-    <img id="newsletter-image" src="Resources/images/Newsletter-image.png" alt="Sign up to get the latest jobs">
-    <div class="sign-up">
-        <h1 class="white">Receive new job offers.</h1>
-        <p>Want to know as soon as a new job offer is posted on our website? Subscribe to our weekly job offer digest.</p>
-        <input type="email" name="email" id="email" placeholder="Enter e-mail address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-        <button class="btn">Subscribe</button>
+    <div class="bottom-banner">
+        <div>
+            <h1 class="white bottom">Receive new job offers.</h1>  
+            <p class="white bottom-text">Want to know as soon as a new job offer is posted on our website? Subscribe to our weekly job offer digest.</p>
+            <div class="email-collection">
+                <input type="email" name="email" id="email" placeholder="Enter e-mail address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                <button class="btn-rect subs">Subscribe</button>
+            </div>
+        </div>
+        <img id="newsletter-image" src="Resources/images/Newsletter-image.png" alt="Sign up to get the latest jobs">
     </div>
+    
 </div>
+<br>
 <!-- bottom nav -->
 <div class="footer">
     <nav class="bottom-nav">

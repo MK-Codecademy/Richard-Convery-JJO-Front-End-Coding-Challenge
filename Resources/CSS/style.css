@@ -24,46 +24,36 @@ h3 {
     line-height: normal;
     display: inline;
 }
+h4 {
+    text-align: center;
+}
 #hero-image {
     min-height: 405px;
     min-width: 1440px;
     max-width: 100%;
 }
 #newsletter-image {
-    width: 100%;
+    max-width: 100%;
+    height: 200px;
+    float: right;
 }
 nav {
-    float: right;
     font-size: 14px;
 }
 li {
     display: inline;
     margin-left: 15px;
 }
-.btn {
-    background-color: #266EFD;
-    box-shadow: #3876F1 58%;
-    padding: 10px 25px;
-    border-radius: 8px;
-    border-style: none;
-    color: white;
-    font-size: 15px;
-    font-weight: bold;
-}
-.hero {
-    position: relative;
-    text-align: center;
-}
 .hero-container {
     position: absolute;
     top: 40px;
-    left: 130px;
+    left: 9%;
     width: 83%;
 }
 .job-offers-container{
     position: relative;
     top: 40px;
-    left: 130px;
+    left: 9%;
     max-width: 1593.6px;
     width: 83%;
     margin-bottom: 50px;
@@ -96,17 +86,58 @@ li {
 div p {
     max-width: 90%;
 }
+.featured-heading {
+    display: block;
+}
 .featured-container{
     position: relative;
     top: 40px;
-    left: 130px;
+    left: 9%;
+    max-width: 1593.6px;
     width: 83%;
+}
+.featured {
+    padding-bottom: 30px;
+}
+.companies {
+    display: inline-flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    overflow-y: scroll;
+
+}
+.company {
+    min-width: 110px;
+    flex-basis: auto;
+    padding: 8px;
+}
+.center {
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+}
+.logo {
+    border: lightgray 1px solid;
+    padding: 25px;
+    border-radius: 45px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.newsletter{ 
+        position: relative;
+        top: 40px;
+        left: 9%;
+        width: 83%;
 }
 .white {
     color: white;
 }
 .top-nav {
     color: white;
+    float: right;
 }
 .all-jobs {
     float: right;
@@ -122,7 +153,31 @@ div p {
     text-align: right;
     float: right;
 }
-button:not(.btn) {
+.bottom {
+    position: absolute;
+    top: 8px;
+    left: 60px;
+}
+.bottom-text {
+    position: absolute;
+    top: 65px;
+    left: 60px;
+    width: 350px;
+}
+.sign-up-top {
+    background-color: black;
+}
+.bottom-banner {
+    width: 100%;
+    background-color: black;
+    height: 200px;
+}
+.footer {
+    margin: 60px;
+    text-align: center;
+}
+/* Buttons */
+.btn-sq {
     float: right;
     background-color: #266EFD;
     box-shadow: 0 1px 8px 0 #266EFD;
@@ -135,4 +190,47 @@ button:not(.btn) {
     position: absolute;
     bottom:0;
     right:0;
+}
+#btn-round {
+    display: inline;
+    border-radius: 50%;
+    padding: 20px 25px;
+    background-color: #266EFD;
+    box-shadow: 0 1px 8px 0 #266EFD;
+    border-style: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 16px;
+}
+.btn-rect {
+    background-color: #266EFD;
+    box-shadow: #3876F1 58%;
+    padding: 10px 25px;
+    border-radius: 8px;
+    border-style: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    position: inherit;
+}
+input {
+    height: 27px;
+    border-radius: 5px;
+    border: lightgray 1px solid;
+    width: 235px;
+    margin-right: 20px;
+}
+.subs {
+    padding: 7px 25px;
+    font-weight: normal;
+    font-size: small;
+    border-radius: 2px;
+}
+.email-collection {
+    position: absolute;
+    top: 137px;
+    left: 60px;
+    width: 350px;
 }
