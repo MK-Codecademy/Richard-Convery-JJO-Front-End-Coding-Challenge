@@ -5,6 +5,9 @@ html, body {
 h1, h2, h3, h4, p, nav, .btn  {
     font-family: 'Manrope', sans-serif;
 }
+p {
+    font-size: 14px;
+}
 .sans {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 45px;
@@ -16,21 +19,26 @@ h1 {
 h2 {
     display: block;
 }
-.JJO {
-    padding-bottom: 25px;
+h3 {
+    color: #276FFB;
+    line-height: normal;
+    display: inline;
 }
 #hero-image {
-    width: 100%;
+    min-height: 405px;
+    min-width: 1440px;
+    max-width: 100%;
 }
 #newsletter-image {
     width: 100%;
 }
 nav {
     float: right;
+    font-size: 14px;
 }
 li {
     display: inline;
-    margin-left: 25px;
+    margin-left: 15px;
 }
 .btn {
     background-color: #266EFD;
@@ -52,8 +60,44 @@ li {
     left: 130px;
     width: 83%;
 }
-.job-offers{
-    position: absolute;
+.job-offers-container{
+    position: relative;
+    top: 40px;
+    left: 130px;
+    max-width: 1593.6px;
+    width: 83%;
+    margin-bottom: 50px;
+}
+.job-offers-top {
+    margin-bottom: 10px;
+}
+.job-list {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.job {
+    width: 350px;
+    flex-basis: auto; /* default value */
+    flex-grow: 1;
+    margin-right: 30px;
+    position: relative;
+    /* border-left: lawngreen 1px solid; */
+
+}
+.job-border1 {
+    flex-basis: auto;
+    border-right: lightgray 1px solid;
+}
+.job-border2 {
+    width: 20px;
+}
+div p {
+    max-width: 90%;
+}
+.featured-container{
+    position: relative;
     top: 40px;
     left: 130px;
     width: 83%;
@@ -63,4 +107,32 @@ li {
 }
 .top-nav {
     color: white;
+}
+.all-jobs {
+    float: right;
+    color: #276FFB;
+    font-weight: bold;
+}
+.time-since-post {
+    display: inline;
+    text-align: right;
+}
+.time-since-post-container{
+    display: block;
+    text-align: right;
+    float: right;
+}
+button:not(.btn) {
+    float: right;
+    background-color: #266EFD;
+    box-shadow: 0 1px 8px 0 #266EFD;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border-style: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    bottom:0;
+    right:0;
 }
