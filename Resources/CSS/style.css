@@ -146,6 +146,10 @@ div.company > h4 {
     margin-left: auto;
     margin-right: auto;
 }
+#xenity {
+    width: 25px;
+    height: 25px;
+}
 .newsletter{ 
         position: relative;
         top: 40px;
