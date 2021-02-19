@@ -27,6 +27,9 @@ h3 {
 h4 {
     text-align: center;
 }
+.hero-image-container {
+    overflow: hidden;
+}
 #hero-image {
     min-height: 405px;
     min-width: 1440px;
@@ -110,22 +113,32 @@ div p {
     min-width: 110px;
     flex-basis: auto;
     padding: 8px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
-.center {
+.logo-container {
     display: block;
     margin: 0 auto;
     width: 75%;
-}
-.logo {
     border: lightgray 1px solid;
-    padding: 25px;
-    border-radius: 45px;
+    border-radius: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+div.company:not(h4) > * {
+    padding-top: 30px;
+    padding-bottom: 30px;
+   }
+div.company > h4 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    
 }
-
 .newsletter{ 
         position: relative;
         top: 40px;
@@ -203,6 +216,7 @@ div p {
     font-weight: bold;
     position: absolute;
     margin-top: 16px;
+    transform: translate(0px, 22px);
 }
 .btn-rect {
     background-color: #266EFD;
