@@ -76,15 +76,22 @@ li {
     flex-grow: 1;
     margin-right: 30px;
     position: relative;
-    /* border-left: lawngreen 1px solid; */
+    border-left: lightgray 1px solid;
+    padding-left:20px;
+}
 
+div.job:nth-child(1) {
+    border-left: none;
+    padding-left: 0px;
 }
-.job-border1 {
-    flex-basis: auto;
-    border-right: lightgray 1px solid;
+@media (max-width: 1399px) {
+div.job:nth-child(odd):last-child:not(:only-child){
+    padding-left: 0px;
+    border-left: none;
 }
-.job-border2 {
-    width: 20px;
+.job{
+    padding-top: 10px;
+}
 }
 div p {
     max-width: 90%;
