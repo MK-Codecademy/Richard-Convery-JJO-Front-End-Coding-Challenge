@@ -46,6 +46,7 @@ li {
     float: right;
 }
 /* #endregion */
+
 /* #region Buttons */
 .btn-sq {
     float: right;
@@ -90,6 +91,7 @@ li {
     position: inherit;
 }
 /* #endregion */
+
 /* #region Hero*/
 .hero-container {
     position: absolute;
@@ -106,6 +108,7 @@ li {
     max-width: 100%;
 }
 /* #endregion */
+
 /* #region Job offers*/
 .job-offers-container{
     position: relative;
@@ -161,6 +164,7 @@ div.job:nth-child(odd):last-child:not(:only-child){
 }
 }
 /* #endregion */
+
 /* #region  Featured companies*/
 .featured-heading {
     display: block;
@@ -215,6 +219,7 @@ div.company > h4 {
     height: 25px;
 }
 /* #endregion */
+
 /* #region  Newsletter*/
 #newsletter-image {
     height: 200px;
@@ -248,6 +253,7 @@ div.company > h4 {
 }
 }
 /* #endregion */
+
 /* #region  Footer*/
 .footer {
     margin: 60px;
