@@ -36,9 +36,13 @@ h4 {
     max-width: 100%;
 }
 #newsletter-image {
-    max-width: 100%;
     height: 200px;
     float: right;
+}
+@media (max-width: 1039px) {
+#newsletter-image {
+    display: none;
+}
 }
 nav {
     font-size: 14px;
@@ -204,7 +208,6 @@ div.company > h4 {
 .btn-sq {
     float: right;
     background-color: #266EFD;
-    box-shadow: 0 1px 8px 0 #266EFD;
     padding: 5px 10px;
     border-radius: 8px;
     border-style: none;
@@ -215,6 +218,10 @@ div.company > h4 {
     bottom:0;
     right:0;
 }
+.btn-sq:hover {
+    box-shadow: 0 1px 8px 0 #266EFD;
+}
+
 #btn-round {
     display: inline;
     border-radius: 50%;
