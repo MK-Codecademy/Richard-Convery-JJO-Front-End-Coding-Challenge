@@ -1,3 +1,4 @@
+/* #region Global styles*/
 html, body {
     margin:0;
     padding:0;
@@ -7,6 +8,9 @@ h1, h2, h3, h4, p, nav, .btn  {
 }
 p {
     font-size: 14px;
+}
+div p {
+    max-width: 90%;
 }
 .sans {
     font-family: 'Source Sans Pro', sans-serif;
@@ -27,138 +31,12 @@ h3 {
 h4 {
     text-align: center;
 }
-.hero-image-container {
-    overflow: hidden;
-}
-#hero-image {
-    min-height: 405px;
-    min-width: 1440px;
-    max-width: 100%;
-}
-#newsletter-image {
-    height: 200px;
-    float: right;
-}
-@media (max-width: 1039px) {
-#newsletter-image {
-    display: none;
-}
-}
 nav {
     font-size: 14px;
 }
 li {
     display: inline;
     margin-left: 15px;
-}
-.hero-container {
-    position: absolute;
-    top: 40px;
-    left: 9%;
-    width: 83%;
-}
-.job-offers-container{
-    position: relative;
-    top: 40px;
-    left: 9%;
-    max-width: 1593.6px;
-    width: 83%;
-    margin-bottom: 50px;
-}
-.job-offers-top {
-    margin-bottom: 10px;
-}
-.job-list {
-    display: inline-flex;
-    justify-content: space-between;
-    width: 100%;
-    flex-wrap: wrap;
-}
-.job {
-    width: 350px;
-    flex-basis: auto; /* default value */
-    flex-grow: 1;
-    margin-right: 30px;
-    position: relative;
-    border-left: lightgray 1px solid;
-    padding-left:20px;
-}
-
-div.job:nth-child(1) {
-    border-left: none;
-    padding-left: 0px;
-}
-@media (max-width: 1399px) {
-div.job:nth-child(odd):last-child:not(:only-child){
-    padding-left: 0px;
-    border-left: none;
-}
-.job{
-    padding-top: 10px;
-}
-}
-div p {
-    max-width: 90%;
-}
-.featured-heading {
-    display: block;
-}
-.featured-container{
-    position: relative;
-    top: 40px;
-    left: 9%;
-    max-width: 1593.6px;
-    width: 83%;
-}
-.featured {
-    padding-bottom: 30px;
-}
-.companies {
-    display: inline-flex;
-    width: 100%;
-    flex-wrap: nowrap;
-    overflow-y: scroll;
-
-}
-.company {
-    min-width: 110px;
-    flex-basis: auto;
-    padding: 8px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-.logo-container {
-    display: block;
-    margin: 0 auto;
-    width: 75%;
-    border: lightgray 1px solid;
-    border-radius: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-div.company:not(h4) > * {
-    padding-top: 30px;
-    padding-bottom: 30px;
-   }
-div.company > h4 {
-    padding-top: 0px;
-    padding-bottom: 0px;
-}
-
-.logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-#xenity {
-    width: 25px;
-    height: 25px;
-}
-.newsletter{ 
-        position: relative;
-        top: 40px;
-        left: 9%;
-        width: 83%;
 }
 .white {
     color: white;
@@ -167,44 +45,8 @@ div.company > h4 {
     color: white;
     float: right;
 }
-.all-jobs {
-    float: right;
-    color: #276FFB;
-    font-weight: bold;
-}
-.time-since-post {
-    display: inline;
-    text-align: right;
-}
-.time-since-post-container{
-    display: block;
-    text-align: right;
-    float: right;
-}
-.bottom {
-    position: absolute;
-    top: 8px;
-    left: 60px;
-}
-.bottom-text {
-    position: absolute;
-    top: 65px;
-    left: 60px;
-    width: 350px;
-}
-.sign-up-top {
-    background-color: black;
-}
-.bottom-banner {
-    width: 100%;
-    background-color: black;
-    height: 200px;
-}
-.footer {
-    margin: 60px;
-    text-align: center;
-}
-/* Buttons */
+/* #endregion */
+/* #region Buttons */
 .btn-sq {
     float: right;
     background-color: #266EFD;
@@ -247,6 +89,170 @@ div.company > h4 {
     font-weight: bold;
     position: inherit;
 }
+/* #endregion */
+/* #region Hero*/
+.hero-container {
+    position: absolute;
+    top: 40px;
+    left: 9%;
+    width: 83%;
+}
+.hero-image-container {
+    overflow: hidden;
+}
+#hero-image {
+    min-height: 405px;
+    min-width: 1440px;
+    max-width: 100%;
+}
+/* #endregion */
+/* #region Job offers*/
+.job-offers-container{
+    position: relative;
+    top: 40px;
+    left: 9%;
+    max-width: 1593.6px;
+    width: 83%;
+    margin-bottom: 50px;
+}
+.job-offers-top {
+    margin-bottom: 10px;
+}
+.job-list {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.job {
+    width: 350px;
+    flex-basis: auto;
+    flex-grow: 1;
+    margin-right: 30px;
+    position: relative;
+    border-left: lightgray 1px solid;
+    padding-left:20px;
+}
+div.job:nth-child(1) {
+    border-left: none;
+    padding-left: 0px;
+}
+.all-jobs {
+    float: right;
+    color: #276FFB;
+    font-weight: bold;
+}
+.time-since-post-container{
+    display: block;
+    text-align: right;
+    float: right;
+}
+.time-since-post {
+    display: inline;
+    text-align: right;
+}
+@media (max-width: 1399px) {
+div.job:nth-child(odd):last-child:not(:only-child){
+    padding-left: 0px;
+    border-left: none;
+}
+.job{
+    padding-top: 10px;
+}
+}
+/* #endregion */
+/* #region  Featured companies*/
+.featured-heading {
+    display: block;
+}
+.featured-container{
+    position: relative;
+    top: 40px;
+    left: 9%;
+    max-width: 1593.6px;
+    width: 83%;
+}
+.featured {
+    padding-bottom: 30px;
+}
+.companies {
+    display: inline-flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    overflow-y: scroll;
+}
+.company {
+    min-width: 110px;
+    flex-basis: auto;
+    padding: 8px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.logo-container {
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    border: lightgray 1px solid;
+    border-radius: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+div.company:not(h4) > * {
+    padding-top: 30px;
+    padding-bottom: 30px;
+   }
+div.company > h4 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#xenity {
+    width: 25px;
+    height: 25px;
+}
+/* #endregion */
+/* #region  Newsletter*/
+#newsletter-image {
+    height: 200px;
+    float: right;
+}
+.newsletter{ 
+    position: relative;
+    top: 40px;
+    left: 9%;
+    width: 83%;
+}
+.bottom {
+    position: absolute;
+    top: 8px;
+    left: 60px;
+}
+.bottom-text {
+    position: absolute;
+    top: 65px;
+    left: 60px;
+    width: 350px;
+}
+.bottom-banner {
+    width: 100%;
+    background-color: black;
+    height: 200px;
+}
+@media (max-width: 1039px) {
+#newsletter-image {
+    display: none;
+}
+}
+/* #endregion */
+/* #region  Footer*/
+.footer {
+    margin: 60px;
+    text-align: center;
+}
 input {
     height: 27px;
     border-radius: 5px;
@@ -266,3 +272,4 @@ input {
     left: 60px;
     width: 350px;
 }
+/* #endregion */
