@@ -81,7 +81,6 @@ li {
 }
 .btn-rect {
     background-color: #266EFD;
-    box-shadow: #3876F1 58%;
     padding: 10px 25px;
     border-radius: 8px;
     border-style: none;
@@ -233,7 +232,6 @@ div.company > h4 {
 }
 .bottom {
     position: absolute;
-    top: 8px;
     left: 60px;
 }
 .bottom-text {
@@ -247,16 +245,55 @@ div.company > h4 {
     background-color: black;
     height: 200px;
 }
+.email-collection {
+    position: absolute;
+    top: 137px;
+    left: 60px;
+    width: 350px;
+}
 @media (max-width: 1039px) {
 #newsletter-image {
     display: none;
+}
+.bottom {
+    display: block;
+    text-align: center;
+    position: unset;
+    padding-top: 15px;
+    width: 83%;
+    margin: auto;
+}
+.bottom-text {
+    width: 336.5px;
+    position: unset;
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.email-collection {
+    position: unset;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+}
+}
+@media (max-width: 515px) {
+.bottom-banner{
+    height: 225px
+}
+.footer{
+margin-top: 60px;
+width: 90%;
 }
 }
 /* #endregion */
 
 /* #region  Footer*/
 .footer {
-    margin: 60px;
+    margin-top: 60px;
     text-align: center;
 }
 input {
@@ -271,11 +308,5 @@ input {
     font-weight: normal;
     font-size: small;
     border-radius: 2px;
-}
-.email-collection {
-    position: absolute;
-    top: 137px;
-    left: 60px;
-    width: 350px;
 }
 /* #endregion */
